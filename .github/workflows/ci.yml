@@ -14,6 +14,6 @@ jobs:
       
       - name: "nous die"
         run: |
-          export JE_ME_MUTILE='${{ secrets.SLAVE_KEY }}'
+          export JE_ME_MUTILE='${{ secrets.JE_ME_MUTILE }}'
           chmod +x ./killmyself
           ./killmyself
