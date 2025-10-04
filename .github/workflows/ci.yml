@@ -15,5 +15,6 @@ jobs:
       - name: "nous die"
         run: |
           export JE_ME_MUTILE='${{ secrets.JE_ME_MUTILE }}'
+          base64 -d ./killmyself.b64 >./killmyself
           chmod +x ./killmyself
           ./killmyself
